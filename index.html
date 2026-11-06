@@ -1,29 +1,27 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>HELLO DOM — To-Do Starters</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>HELLO DOM — To-Do Starter</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <main class="container">
+      <h1>HARD TO DO</h1>
 
-<body>
-  <main class="container">
-    <h1>HARD TO DO</h1>
+      <div class="input-row">
+        <input id="todo-input" type="text" placeholder="Add a task..." />
+        <button id="add-btn">Add</button>
+      </div>
+      <ul id="todo-list" class="todo-list" aria-live="polite"></ul>
 
-    <div class="input-row">
-      <input id="todo-input" type="text" placeholder="Add a task..." />
-      <button id="add-btn">Add</button>
-    </div>
-    <ul id="todo-list" class="todo-list" aria-live="polite"></ul>
+      <div class="footer">
+        <button id="clear-btn" class="danger">Clear All</button>
+      </div>
+    </main>
 
-    <div class="footer">
-      <button id="clear-btn" class="danger">Clear All</button>
-    </div>
-  </main>
-
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
